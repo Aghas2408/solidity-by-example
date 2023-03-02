@@ -5,7 +5,7 @@ pragma solidity ^0.8.9;
 
 contract ValueTypes {
     bool public b = true;
-     /*
+    /*
     uint stands for unsigned integer, meaning non negative integers
     different sizes are available
         uint8   ranges from 0 to 2 ** 8 - 1
@@ -13,15 +13,15 @@ contract ValueTypes {
         ...
         uint256 ranges from 0 to 2 ** 256 - 1
     */
-    uint public u = 123; // uint = uint256 
-        /*
+    uint public u = 123; // uint = uint256
+    /*
     Negative numbers are allowed for int types.
     Like uint, different ranges are available from int8 to int256
     
     int256 ranges from -2 ** 255 to 2 ** 255 - 1
     int128 ranges from -2 ** 127 to 2 ** 127 - 1
     */
-    int public i = -123; 
+    int public i = -123;
 
     // minimum and maximum of int
     int public minInt = type(int).min;
@@ -30,7 +30,8 @@ contract ValueTypes {
     // address type
     address public addr = 0xfb0B3506DFc4200a5496A767e43AE30b07291E1C;
 
-    bytes32 public b32 = 0x52eb13c4df4eff8c5c22773993f7643d3121bd47bb3ab7adf0cab3e4ca82549f; 
+    bytes32 public b32 =
+        0x52eb13c4df4eff8c5c22773993f7643d3121bd47bb3ab7adf0cab3e4ca82549f;
 
     /*
     In Solidity, the data type byte represent a sequence of bytes. 
